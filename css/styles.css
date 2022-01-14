@@ -1,0 +1,176 @@
+:root{
+    --primary-soft-blue:hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --blue-main:hsl(217, 54%, 11%);
+    --blue-card:hsl(216, 50%, 16%);
+    --blue-line:hsl(215, 32%, 27%);
+    --neutral-white:hsl(0, 0%, 100%);
+}
+
+
+
+body{
+    background-color: var(--blue-card);
+    color: var(--neutral-white);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+h1{
+    font-size: 1.3rem;
+    
+}
+
+.card__content h1 a{
+    color: var(--neutral-white);
+
+}
+
+.card__content h1 a:hover{
+    color: var(--primary-cyan);
+
+}
+
+.card{
+    width: 300px;
+    margin: 20px auto 0px auto;
+    padding: 25px;
+    background-color: var(--blue-line);
+    border-radius: 4%;
+    box-shadow: 0px 20px 8px 20px var(--blue-main);
+}
+
+
+.card__image img{
+    width: 100%;
+    border-radius: 4%;
+    padding: 0px 0px;
+}
+
+.image__cube__eye{
+    position: relative;
+    background-color: var(--primary-cyan);
+    border-radius: 4%;
+    height: 300px;
+    
+}
+
+.image__cube__eye:hover .image__cube{
+    opacity: 0.3;
+    
+
+       
+}
+
+.image__cube__eye:hover .image__eye{
+    visibility: visible;
+       
+}
+
+.image__cube{
+    position: relative;
+    z-index: 1;
+}
+
+.image__eye{
+
+    transform: scale(0.2);
+    position: absolute;
+    left: 0px;
+    visibility: hidden;
+    z-index: 2;
+    
+}
+
+
+
+
+.card__content p{
+    font-size: 1.12rem;
+    font-weight: 300;
+    color:var(--primary-soft-blue);
+}
+
+
+.card__content__info{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.infor__eth{
+    
+    display: flex;
+    align-items: center;
+
+   
+}
+
+
+
+.infor__eth p{
+    color: var(--primary-cyan);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0px 15px;
+
+}
+
+.info__time{
+    display: flex; 
+    align-items: center;
+}
+
+.info__time p{
+    margin: 0px 0px 0px 15px;
+}
+
+
+.card__author{
+    margin-top: 30px;
+    border-top: 0.1px solid hsl(215, 51%, 70%, 0.3);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.card__author img{
+    border-radius: 50%;
+    border: 1px solid var(--neutral-white);
+    width: 34px;
+    float: left;
+    
+}
+
+.card__author p{
+    color:var(--primary-soft-blue);
+    margin-left:22px;
+}
+
+.card__author a{
+    color:var(--neutral-white);
+}
+
+.card__author a:hover{
+    color:var(--primary-cyan);;
+}
+
+
+
+.attribution{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+a{
+    color:var(--primary-soft-blue);
+    text-decoration: none;
+}
+/*
+
+
+
+*/
